@@ -1,0 +1,9 @@
+node_modules
+vendor
+
+package-lock.json
+
+*.log
+.DS_Store
+
+dist
