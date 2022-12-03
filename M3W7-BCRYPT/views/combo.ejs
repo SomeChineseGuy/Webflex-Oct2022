@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single</title>
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    section, nav {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    div {
+      text-align: left;
+      border: 3px solid tomato;
+      padding: 20px;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button {
+      color: white;
+      padding: 10px 20px;
+      background-color: rgb(205, 39, 10);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: rgb(247, 130, 109);
+      color: black;
+    }
+    .no-borders {
+      border: none;
+    }
+
+    .select-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/nav'); %>
+  <h1>Lighthouse Fast Food Place!</h1>
+
+  <section>
+    <h2>Single Item</h2>
+      <div>
+        <h3>Main: <%= combo.main %></h3>
+        <h3>Side: <%= combo.side  %></h3>
+        <h3>Drink: <%= combo.drink  %></h3>
+      </div>
+    
+  </section>
+</body>
+</html>

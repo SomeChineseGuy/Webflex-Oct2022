@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <h2>Registration form</h2>
+  <p>Already registered? Try <a href="/login">logging in</a> instead</p>
+  <form method="POST" action="/register">
+    <div>
+      <label>Email:</label>
+      <input type="email" name="email" />
+    </div>
+    
+    <div>
+      <label>Password:</label>
+      <input type="text" name="password" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <% if(error) { %>
+  <h1><%= error %></h1>
+  <% } %>
+</body>
+</html>

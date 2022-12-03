@@ -1,0 +1,17 @@
+<nav>
+    
+  <a href="/menu" class="button"> Home</a>
+  <a href="/menu/new" class="button"> Add New</a>
+  <% if(user) { %>
+    <div>
+    <h5>Hello, <%= user.email %></h5>
+      <form action="/logout" method="POST">
+        <button type="submit" class="button">Logout</button>
+      </form>
+    </div>
+  <% } else {%>
+    <a href="/login" class="button"> Login</a>
+    <a href="/register" class="button"> Register</a>
+  <% } %>
+
+</nav>

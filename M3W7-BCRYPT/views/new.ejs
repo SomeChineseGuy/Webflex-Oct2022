@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=h1, initial-scale=1.0">
+  <title>New</title>
+  <style>
+    body {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    section, nav {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    div {
+      text-align: left;
+      border: 3px solid tomato;
+      padding: 20px;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button {
+      color: white;
+      padding: 10px 20px;
+      background-color: rgb(205, 39, 10);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: rgb(247, 130, 109);
+      color: black;
+    }
+    .no-borders {
+      border: none;
+    }
+
+    .select-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/nav'); %>
+  <h1>Add new!</h1>
+  <form action="/menu/new" method="POST">
+    <div>
+      <label for="main">Main</label>
+      <input type="text" name="main" id="">
+    </div>
+    <div>
+      <label for="main">Side</label>
+      <input type="text" name="side" id="">
+    </div>
+    <div>
+      <label for="main">Drink</label>
+      <input type="text" name="drink" id="">
+    </div>
+    <button type="submit">Add</button>
+  </form>
+</body>
+</html>
