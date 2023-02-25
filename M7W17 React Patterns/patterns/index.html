@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="j">
+    <h1>Hello everyone!</h1>
+    <h1>The count is: 1</h1>
+    <button>Increase</button>
+  </div>
+  <button class="btn">Rerender</button>
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+
+  <script>
+    const update = () => {
+      return 
+    }
+    $(document).ready(function() {
+      const count = 1
+      $('.btn').click(function() {
+        $('.j').html(`    
+        <div>
+          <h1>Hello everyone!</h1>
+          <h1>The count is: ${count + 1}</h1>
+          <button>Increase</button>
+        </div>
+        `)
+      })
+    })
+
+  </script>
+
+</body>
+</html>
